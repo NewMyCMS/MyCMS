@@ -1,0 +1,46 @@
+<?php
+$reply_item = <<<EOD
+       <div class="reply">{$replies}
+        <div class="wrapper">
+         <div class="rtop">
+          <span class="left"
+         ><a href="user.php?uid={$reply['uid']}">{$reply['username']}</a></span>
+          <span class="center">[{$reply['ip']}]</span>
+          <span class="right">{$i}</span>
+         </div>
+         <div class="comment"><span>{$reply['comment']}</span></div>
+         <div class="rbottom">
+          <div class="left">{$reply['posttime']}</div>
+          <div class="right">
+           <a href="">支持({$reply['ding']})</a>
+           <a href="">回复</a>
+           <a href="">收藏</a>
+           <a href="">分享</a>
+          </div>
+         </div>
+         <div style="clear:both;"></div>
+        </div>
+       </div>
+      <div class="form">
+       <form name="comment-from" action="comment.php" method="post">
+        <div>
+         <input name="pid" type="hidden" value="{$reply['commentid']}">
+         <input name="aid" type="hidden" value="{$reply['aid']}">
+         <input name="hasreply" type="hidden" value="{$reply['hasreply']}">
+         <textarea name="comment_content"></textarea>
+        </div>
+        <div style="height:20px;padding:5px 5px 0 5px;">
+         <span class="fleft">
+          <input name="username" type="text" value="用户名">
+          <input name="password" type="password" value="">
+          <input name="remember" type="checkbox" value="1">记住我
+         </span>
+         <span class="fright">  
+          <a href="register.php">注册</a>|<a href="users.php">忘记密码?</a>
+          <input type="submit" value="发表">
+         </span>
+        </div>
+       </form>
+      </div>
+EOD;
+?>

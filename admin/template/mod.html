@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+	<title>标题</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="MyCMS">
+	<meta name="keywords" content="MyCMS,PHP,CMS,麦草CMS,面向对象,内容管理">
+	<meta name="description" content="MyCMS（麦草CMS）是一个短小精悍的内容管理系统（CMS），用PHP语言编写，用了面向对象的语言结构。">
+	<link rel="stylesheet" type="text/css" href="css/mod.css" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+  </head>
+  <body>
+	<div id="wrapper">
+	  <div id="pageHeader">
+		<div id="websiteInfo">
+		  <div id="logo"><a href="">麦草CMS</a></div>
+		  <div id="websiteName"><a href="">测试站</a></div>
+		</div>
+		<div id="topPanel">
+		  <ul>
+			<li>文章中心</li>
+			<li>下载中心</li>
+			<li>图片中心</li>
+			<li>视频中心</li>
+		  </ul>
+		</div>
+	  </div>
+	  <div id="pageBody">
+		<!--侧边栏开始-->
+		<div id="aside">
+		  <!--菜单开始-->
+		  <nav class="asideMenuWrapper">
+			<div class="asideMenuTitle">菜单</div>
+			<div class="asideMenuItems">
+			  <ul>
+				 <li><a href="">子菜单</a></li>
+				 <li class="currentItem"><a href="">子菜单</a></li>
+				 <li><a href="">子菜单</a></li>
+				 <li><a href="">子菜单</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		  <!--菜单结束-->
+		  <!--菜单开始-->
+		  <nav class="asideMenuWrapper">
+			<div class="asideMenuTitle">菜单</div>
+			<div class="asideMenuItems">
+			  <ul>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		  <!--菜单结束-->
+		  <!--菜单开始-->
+		  <nav class="asideMenuWrapper">
+			<div class="asideMenuTitle">菜单</div>
+			<div class="asideMenuItems">
+			  <ul>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		  <!--菜单结束-->
+		  <!--菜单开始-->
+		  <nav class="asideMenuWrapper">
+			<div class="asideMenuTitle">菜单</div>
+			<div class="asideMenuItems">
+			  <ul>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+				<li><a href="">子菜单</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		  <!--菜单结束-->
+		</div>
+		<!--侧边栏结束-->
+		<div id="main">
+		  <!--开始-->
+		  <div class="boxWrapper">
+			<div class="box">
+			  <div class="boxTitle">标题</div>
+			  <div class="boxContainer">
+			    <div class="infoBox"><img class="icon" src="img/icons/info.png">这是一个常规类型的信息框，其显示诸如操作提示一类的信息。</div>
+				<div class="errorBox"><img class="icon" src="img/icons/error.png">这是一个错误类型的信息框，其显示诸如操作错误、页面执行失败一类的信息。</div>
+				<div class="warningBox"><img class="icon" src="img/icons/notice.png">这是一个警告类型的信息框，其显示的内容顾名思义是警告含义。</div>
+				<div class="successBox"><img class="icon" src="img/icons/success.png">这是一个成功类型的信息框，宣誓着成功。</div>
+				<div class="mBox">这是一个信息框。</div>
+			  </div>
+			</div>
+			<div class="hidden"></div>
+		  </div>
+		  <!--结束-->
+		  <!--开始-->
+		  <div class="boxWrapper">
+			<div class="box">
+			  <div class="boxTitle">标题</div>
+			  <div class="boxContainer">
+			  <table class="boxTable">
+			    <thead>
+				  <tr>
+				    <th><input id="selectAll" type="checkbox"></th>
+				    <th>标题</th>
+				    <th>作者</th>
+					<th>摘要</th>
+					<th>时间</th>
+				    <th>操作</th>
+				  </tr>
+			    </thead>
+			    <tbody>
+				  <tr class="darkRow">
+				    <th><input name="articleId" type="checkbox" value=""></th>
+				    <td>这是一个标题</td>
+				    <td>admin</td>
+					<td>这是内容摘要……</td>
+					<td>2017/07/14 16:52:25</td>
+				    <td><a href="">编辑</a>&nbsp;|&nbsp;<a href="">删除</a></td>
+				  </tr>
+				  <tr class="lightRow">
+				    <th><input name="articleId" type="checkbox" value=""></th>
+				    <td>这是一个标题</td>
+				    <td>admin</td>
+					<td>这是内容摘要……</td>
+					<td>2017/07/14 16:52:25</td>
+				    <td><a href="">编辑</a>&nbsp;|&nbsp;<a href="">删除</a></td>
+				  </tr>
+				  <tr class="darkRow">
+				    <th><input name="articleId" type="checkbox" value=""></th>
+				    <td>这是一个标题</td>
+				    <td>admin</td>
+					<td>这是内容摘要……</td>
+					<td>2017/07/14 16:52:25</td>
+				    <td><a href="">编辑</a>&nbsp;|&nbsp;<a href="">删除</a></td>
+				  </tr>
+				  <tr class="lightRow">
+				    <th><input name="articleId" type="checkbox" value=""></th>
+				    <td>这是一个标题</td>
+				    <td>admin</td>
+					<td>这是内容摘要……</td>
+					<td>2017/07/14 16:52:25</td>
+				    <td><a href="">编辑</a>&nbsp;|&nbsp;<a href="">删除</a></td>
+				  </tr>
+				  <tr class="darkRow">
+				    <th><input name="articleId" type="checkbox" value=""></th>
+				    <td>这是一个标题</td>
+				    <td>admin</td>
+					<td>这是内容摘要……</td>
+					<td>2017/07/14 16:52:25</td>
+				    <td><a href="">编辑</a>&nbsp;|&nbsp;<a href="">删除</a></td>
+				  </tr>
+			    </tbody>
+			    <tfoot>
+				  <tr>
+				    <th><input id="selectAll" type="checkbox"></th>
+				    <th>标题</th>
+				    <th>作者</th>
+					<th>摘要</th>
+					<th>时间</th>
+				    <th>操作</th>
+				  </tr>
+			    </tfoot>
+			  </table>
+			    <div class="pagination"></div>
+			  </div>
+			</div>
+			<div class="hidden"></div>
+		  </div>
+		  <!--结束-->
+		  <!--开始-->
+		  <div class="boxWrapper">
+			<div class="box">
+			  <div class="boxTitle">标题</div>
+			  <div class="boxContainer">
+			  <form action="" method="post">
+				<div class="formItemGroup">
+				  <div class="formItemGroupTitle">字段集名称</div>
+				  <div class="formItemGroupBox">
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label for="text" class="fieldLabel">文本框中华人民共和国中华人民共和国</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper"><input id="text" name="text" type="text" value="" placeholder="请输入文本" required></div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+				      <label for="" class="fieldLabel">文本域</label>
+				      <div class="formItem">
+					    <div class="fieldWrapper">
+				          <textarea id="" name="" rows="5" maxlength="200" placeholder="文本域，可输入较多文字" required></textarea>
+				        </div>
+				        <div class="formItemHelp">输入提示</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+				   	  <label for="" class="fieldLabel">下拉菜单(单选)</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper">
+					      <select name="" id="">
+					        <option value="MyCMS">MyCMS</option>
+					        <option value="PHP">PHP</option>
+					        <option value="HTML5">HTML5</option>
+					      </select>
+					    </div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label for="" class="fieldLabel">下拉菜单(多选)</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper">
+					      <select name="" id="" multiple="multiple">
+					        <option value="MyCMS">MyCMS</option>
+					        <option value="PHP">PHP</option>
+					        <option value="HTML5">HTML5</option>
+					      </select>
+					    </div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label class="fieldLabel">单选框</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper">
+					      <label class="selectText"><input id="" name="sex" type="radio" value="男">男</label><br>
+					      <label class="selectText"><input id="" name="sex" type="radio" value="女">女</label>
+					    </div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label class="fieldLabel">复选框</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper">
+					      <label class="selectText"><input id="" name="program language" type="checkbox" value="VB">VB</label><br>
+					      <label class="selectText"><input id="" name="program language" type="checkbox" value="Java">Java</label><br>
+					      <label class="selectText"><input id="" name="program language" type="checkbox" value="C">C</label><br>
+					      <label class="selectText"><input id="" name="program language" type="checkbox" value="C++">C++</label><br>
+					    </div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label for="text" class="fieldLabel">文件域</label>
+					  <div class="formItem">
+					    <div class="fieldWrapper"><input id="text" name="text" type="file" value="" placeholder="请输入文本" required></div>
+					    <div class="formItemHelp">帮助文本，这是一个块级元素，测试一下断行</div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				    <!--表单项开始-->
+				    <div class="formItemWrapper">
+					  <label class="fieldLabel"></label>
+					  <div class="formItem">
+					    <div class="fieldWrapper">
+					      <button type="submit">提交</button>
+						  <button type="reset">重置</button>
+					    </div>
+					    <div class="formItemHelp"></div>
+					  </div>
+					  <div class="hidden"></div>
+				    </div>
+				    <!--表单项结束-->
+				  </div>
+				</div>
+			  </form>
+			  </div>
+			</div>
+			<div class="hidden"></div>
+		  </div>
+		  <!--结束-->
+		  <!--开始-->
+		  <div class="boxWrapper">
+			<div class="box">
+			  <div class="boxTitle">标题</div>
+			  <div class="boxContainer">
+				一个空盒子
+			  </div>
+			</div>
+			<div class="hidden"></div>
+		  </div>
+		  <!--结束-->
+		  <div class="fixedBox">悬浮的盒子</div>
+		</div>
+	  </div>
+	  <div id="pageFooter">
+		页脚
+	  </div>
+	  <div class="hidden"></div>
+	</div>
+  </body>
+</html>

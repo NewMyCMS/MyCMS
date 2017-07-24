@@ -1,0 +1,1 @@
+$user = array('uid' => '1', 'gid' => '1', 'username' => 'anonymous', 'password' => '', 'email' => '', 'info' => '', 'registered' => '2013-07-24 23:14:51', 'lastlogintime' => '2013-07-24 23:14:51', 'ip' => '0', 'truename' => '', 'passport' => '', 'birthday' => '2013-07-24', 'favourite' => '', 'school' => '', 'virtual_coin' => '0.00');

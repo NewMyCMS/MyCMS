@@ -1,0 +1,341 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 14px;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: Black;
+}
+
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+
+#pageHeader{
+}
+
+#websiteInfo{
+  background-color: #293E6A;
+  height: 32px;
+}
+
+#logo{
+  float: left;
+  padding: 4px;
+  /*border: 1px solid Red;*/
+}
+
+#logo a{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#websiteName{
+  padding: 8px;
+  float: left;
+}
+
+#topPanel{
+  /*overflow: hidden;
+  white-space: nowrap;*/
+  background-color: #3B5998;
+  clear: both;
+}
+
+#topPanel ul{
+  list-style: none;
+  display: inline-block;
+}
+
+#topPanel li{
+  padding: 10px;
+  display: inline-block;
+}
+
+#topPanel span{
+  display: inline-block;
+  font-weight: bold;
+  float: right;
+}
+
+#pageBody{
+  clear: both;
+}
+
+/*侧边栏开始*/
+#aside{
+  width: 170px;
+  float: left;
+  margin: 10px;
+  background-color: #FFFFFF;
+}
+
+.asideMenuWrapper{
+  margin: 20px;
+}
+
+.asideMenuTitle{
+  padding: 5px;
+  background-color: Black;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.asideMenuItems{
+  padding: 5px;
+}
+
+.asideMenuItems ul{
+  list-style: none;
+}
+
+.asideMenuItems li{
+  margin: 5px;
+  padding: 5px;
+}
+
+.asideMenuItems li:hover{}
+
+.asideMenuItems li:active{}
+
+.asideMenuItems li a, asideMenuItems li a:visited{}
+
+.asideMenuItems li a:hover{}
+
+.asideMenuItems li a:active{}
+
+.currentItem{}
+/*侧边栏结束*/
+
+#main{
+  width: 740px;
+  float: right;
+  background-color: #FFFFFF;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+/*盒子样式开始*/
+.boxWrapper{
+}
+
+.box{
+  margin: 10px;
+}
+
+.boxTitle{
+  padding: 10px 20px;
+  border-bottom: 2px solid #D0D0D0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.boxContainer{
+  padding: 10px;
+}
+/*盒子样式结束*/
+
+/*表单样式开始*/
+.formItemGroup{
+  width: 470px;
+}
+
+.formItemGroupTitle{
+  padding: 10px 15px;
+  border-bottom: 1px solid #D0D0D0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.formItemGroupBox{
+}
+
+.formItemWrapper{
+  margin: 25px;
+  padding: 5px;
+}
+
+.fieldLabel{
+  width: 100px;
+  padding: 5px;
+  display: block;
+  float: left;
+}
+
+.formItem{
+  padding: 5px;
+  float: left;
+}
+
+.fieldWrapper{
+}
+
+.fieldWrapper input{
+  width: 200px;
+  height: 20px;
+  padding: 2px 5px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper textarea{
+  width: 200px;
+  padding: 2px 5px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper select{
+  width: 212px;
+  height: 26px;
+  padding: 2px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper select[multiple="multiple"]{
+  width: 212px;
+  height: 80px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper option{
+  width: 200px;
+  padding: 1px;
+  margin: 1px 3px;
+}
+
+.fieldWrapper input:focus, .fieldWrapper textarea:focus, .fieldWrapper select:focus, .fieldWrapper button:focus{
+  border: 1px solid #03A9F4;
+  box-shadow: 0 0 2px #03A9F4;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: auto;
+  height: auto;
+  margin: 5px;
+}
+
+.fieldWrapper input[type="radio"]:focus, .fieldWrapper input[type="checkbox"]:focus{
+  box-shadow: none;
+}
+
+.fieldWrapper button{
+  padding: 2px 5px;
+}
+
+input[type="file"]{
+  border: 1px dashed Red;
+}
+
+.formItemHelp{
+  width: 210px;
+  font-size: 12px;
+  color: #737574;
+  padding: 2px 4px;
+}
+/*表单样式结束*/
+
+/*表格样式开始*/
+.boxTable{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.boxTable tr{}
+
+.boxTable thead tr{
+  border-top: 2px solid #A1A1A1;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.boxTable tbody tr{
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.boxTable tfoot tr{
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 2px solid #A1A1A1;
+}
+
+.boxTable th{
+  padding: 10px 5px;
+}
+
+.boxTable td{
+  padding: 10px 5px;
+}
+/*表格样式结束*/
+
+/*页脚开始*/
+#pageFooter{
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  clear: both;
+  border: 1px dashed Red;
+}
+/*页脚结束*/
+
+/*信息框*/
+.infoBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #99C4EA;
+  background-color: #D1E4F3;
+}
+
+.errorBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #E18B7C;
+  background-color: #FAD5CF;
+}
+
+.warningBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #EAC572;
+  background-color: #FFE9AD;
+}
+
+.successBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #83DE87;
+  background-color: #CCECBA;
+}
+
+.mBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #FBE187;
+  background-color: #FFFFDF;
+}
+
+.icon{
+  width: 11px;
+  height: 11px;
+  margin: 0 5px;
+}
+/*信息框结束*/
+
+.hidden{
+  clear: both;
+  height: 1px;
+}
+
+/*03a9f4*/

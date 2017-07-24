@@ -1,0 +1,434 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 14px;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: Black;
+}
+
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+
+#websiteInfo{
+  background-color: #293E6A;
+  height: 32px;
+}
+
+#logo2{
+  color: White;
+  padding: 10px;
+  text-align: center;
+}
+
+#logo a{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#websiteName{
+  padding: 8px;
+  float: left;
+}
+
+#topPanel{
+  /*overflow: hidden;
+  white-space: nowrap;*/
+  background-color: #3B5998;
+  clear: both;
+}
+
+#topPanel ul{
+  list-style: none;
+  display: inline-block;
+}
+
+#topPanel li{
+  padding: 10px;
+  display: inline-block;
+}
+
+#topPanel span{
+  display: inline-block;
+  font-weight: bold;
+  float: right;
+}
+
+/*侧边栏开始*/
+#aside{
+  width: 180px;
+  float: left;
+  background-color: #202020;
+}
+
+.asideMenuWrapper{
+}
+
+.currentMenu{
+  
+}
+
+.asideMenuTitle a, .asideMenuTitle a:visited{
+  color: #FFFFFF;
+}
+
+.currentMenu .asideMenuTitle{
+  padding: 15px 10px;
+  color: #FFFFFF;
+  background-color: Black;
+}
+
+.asideMenuWrapper .asideMenuTitle{
+  padding: 15px 10px;
+  color: #FFFFFF;
+  background-color: #202020;
+}
+
+.foldIcon{
+  display: inline-block;
+  float: right;
+}
+
+.currentMenu .foldIcon::before{
+  content: "-";
+}
+
+.asideMenuWrapper .foldIcon::before{
+  content: "+";
+}
+
+.asideMenuWrapper .asideMenuItems{
+  display: none;
+}
+
+.currentMenu .asideMenuItems{
+  display: block;
+}
+
+.asideMenuItems ul{
+  list-style: none;
+}
+
+.asideMenuItems li{
+  padding: 10px 5px 10px 20px;
+}
+
+.asideMenuItems li:hover{}
+
+.asideMenuItems li:active{}
+
+.asideMenuItems li a, asideMenuItems li a:visited{
+  color: #FFFFFF;
+}
+
+.asideMenuItems li a:hover{}
+
+.asideMenuItems li a:active{}
+
+.currentItem{
+  background-color: red;
+}
+
+.currentItem a, .currentItem a:visited{
+  color: #afe;
+}
+
+.defaultItem{
+  background-color: #202020;
+}
+
+.defaultItem a, .defaultItem a:visited{
+  color: #FFFFFF;
+}
+/*侧边栏结束*/
+
+#main{
+  width: 780px;
+  float: right;
+  /*background-color: #FFFFFF;
+  margin: 10px 10px 10px 0;
+  padding: 10px;*/
+}
+
+
+#pageHeader{
+  margin: 0px;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
+#pageBody{
+  /*margin: 10px;
+  background-color: #FFFFFF;*/
+}
+
+/*盒子样式开始*/
+.boxWrapper{
+  padding: 5px;
+  margin: 10px;
+  background-color: #FFFFFF;
+}
+
+.box{
+  margin: 5px;
+  float: left;
+  width: 740px;
+}
+
+.box2col{
+  margin: 5px;
+  float: left;
+  width: 365px;
+}
+
+.boxTitle{
+  padding: 10px 20px;
+  border-bottom: 1px solid #D0D0D0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #108CEE;
+}
+
+.boxTab{
+  margin: 5px;
+  float: left;
+  width: 740px;
+  border: 1px solid #D0D0D0;
+}
+
+.boxTab .boxTitle{
+  padding: 0;
+  border-bottom: 1px solid #D0D0D0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.boxTab ul{
+  list-style: none;
+}
+
+.boxTab li{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  border-right: 1px solid #D0D0D0;
+  background-color: #108CEE;
+}
+
+.boxTab li a, .boxTab li a:visited{
+  color: #FFFFFF;
+}
+
+.boxContainer{
+  padding: 10px;
+}
+/*盒子样式结束*/
+
+/*表单样式开始*/
+.formItemGroup{
+}
+
+.formItemGroupTitle{
+  padding: 10px 15px;
+  border-bottom: 1px solid #D0D0D0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6E6E6E;
+}
+
+.formItemGroupBox{
+}
+
+.formItemWrapper{
+  margin: 10px;
+  padding: 5px;
+}
+
+.fieldLabel{
+  width: 100px;
+  padding: 10px 5px;
+  display: block;
+  float: left;
+}
+
+.formItem{
+  padding: 5px;
+  float: left;
+}
+
+.fieldWrapper{
+}
+
+.fieldWrapper input{
+  width: 200px;
+  height: 20px;
+  padding: 2px 5px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper textarea{
+  width: 200px;
+  padding: 2px 5px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper select{
+  width: 212px;
+  height: 26px;
+  padding: 2px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper select[multiple="multiple"]{
+  width: 212px;
+  height: 80px;
+  border: 1px solid #99C4EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.fieldWrapper option{
+  width: 200px;
+  padding: 1px;
+  margin: 1px 3px;
+}
+
+.fieldWrapper input:focus, .fieldWrapper textarea:focus, .fieldWrapper select:focus, .fieldWrapper button:focus{
+  border: 1px solid #03A9F4;
+  box-shadow: 0 0 2px #03A9F4;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: auto;
+  height: auto;
+  margin: 5px;
+}
+
+.fieldWrapper input[type="radio"]:focus, .fieldWrapper input[type="checkbox"]:focus, .fieldWrapper input[type="file"]:focus{
+  box-shadow: none;
+}
+
+.fieldWrapper button{
+  padding: 5px 15px;
+  margin: 2px 5px;
+  letter-spacing: 2px;
+  background-color: #108CEE;/*#0080C8;*/
+  border: 1px solid #108CEE;/*#0080C8;*/
+  color: #FFFFFF;
+}
+
+input[type="file"], input[type="file"]:focus{
+  border: 1px dashed Red;
+}
+
+.formItemHelp{
+  width: 210px;
+  font-size: 12px;
+  color: #737574;
+  padding: 2px 4px;
+}
+/*表单样式结束*/
+
+/*表格样式开始*/
+.boxTable{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.boxTable tr{}
+
+.boxTable thead tr{
+  border-top: 2px solid #A1A1A1;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.boxTable tbody tr{
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.boxTable tfoot tr{
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 2px solid #A1A1A1;
+}
+
+.boxTable th{
+  padding: 10px 5px;
+}
+
+.boxTable td{
+  padding: 10px 5px;
+}
+/*表格样式结束*/
+
+/*页脚开始*/
+#pageFooter{
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  clear: both;
+}
+/*页脚结束*/
+
+/*信息框*/
+.infoBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #99C4EA;
+  background-color: #D1E4F3;
+}
+
+.errorBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #E18B7C;
+  background-color: #FAD5CF;
+}
+
+.warningBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #EAC572;
+  background-color: #FFE9AD;
+}
+
+.successBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #83DE87;
+  background-color: #CCECBA;
+}
+
+.mBox{
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #FBE187;
+  background-color: #FFFFDF;
+}
+
+.icon{
+  width: 11px;
+  height: 11px;
+  margin: 0 5px;
+}
+/*信息框结束*/
+
+.hidden{
+  clear: both;
+  height: 1px;
+}
+
+/*03a9f4*/

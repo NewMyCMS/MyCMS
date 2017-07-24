@@ -1,0 +1,127 @@
+<?php
+
+/***********************
+        mydb类
+***********************/
+final class db{
+ public $conn;
+ public $cerrno;
+ public $cerror;
+ public $error;
+ public $insertid;
+  //类构造函数
+ final public function __construct($host, $user, $pwd, $dbname){
+  $conn = new mysqli($host, $user, $pwd, $dbname);
+  $this->conn = $conn;
+  $this->insertid = $conn->insert_id;
+  $this->cerrno = $conn->connect_errno;
+  $this->cerror = $conn->connect_error;
+ }
+ 
+ final public function selectdb($dbname){
+  if($this->conn->select_db($dbname)){
+   $this->error = '选择数据库出错！';
+   return false;
+  }
+  return true;
+ }
+  
+ final public function _query($sql, $limit = ''){
+  if($limit) $sql .= ' limit '.$limit;
+  if(!$result = $this->conn->query($sql)){
+   $this->error = 'SQL语句错误！';
+   return false;
+  }
+  return new result($result);
+ }
+ 
+ final public function pagination($table, $fields, $id, $start, $limit){
+  
+ }
+ 
+ final public function insert($sql){
+  if(!$this->conn->query($sql)){
+   $this->error = 'SQL语句错误！';
+   return false;
+  }
+  return true;
+ }
+ 
+ final public function update($sql, $limit = 0){
+  if($limit) $sql .= ' limit '.$limit;
+  if(!$this->conn->query($sql)){
+   $this->error = 'SQL语句错误！';
+   return false;
+  }
+  return true;
+ }
+ 
+ final public function del($sql, $limit = 0){ 
+  if(!$this->conn->query($sql)){
+   $this->error = 'SQL语句错误！';
+   return false;
+  }
+  return true;
+ }
+ 
+ final public function _autocommit(){
+  
+ }
+ 
+ 
+ final public function _commit(){
+  
+ }
+ 
+
+ final public function _rollback(){
+  
+ }
+ 
+ final public function setcharset(){
+  
+ }
+ 
+ 
+ final public function getversion(){
+  
+ }
+ 
+ final public function _close(){
+  $this->conn->close();
+ }
+ 
+ /*final public function (){
+  
+ }*/
+}
+
+
+
+/***********************
+        myresult类
+***********************/
+final class result{
+ public $num_rows;
+ public $result;
+ //public $error;
+ 
+ //类构造函数
+ final public function __construct($result){
+  $this->result = $result;
+  $this->num_rows = $result->num_rows;
+ }
+ 
+ final public function fetch(){
+  return $this->result->fetch_assoc();
+ }
+  
+ final public function free(){
+  $this->result->free();
+ }
+ 
+ /*final public function (){
+  
+ }*/
+}
+?>
