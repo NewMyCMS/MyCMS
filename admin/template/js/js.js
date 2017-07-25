@@ -1,5 +1,6 @@
 var prevCF = null;
 var dialog = null;
+
 function creatXHR(){
  var xhr = null;
  if(window.XMLHttpRequest){
@@ -18,6 +19,7 @@ function creatXHR(){
  }
  return xhr;
 }
+
 function commentHandler(btn){
  var form = btn.form;
  var xhr = creatXHR();
@@ -36,7 +38,7 @@ function commentHandler(btn){
   }else{
    dialog.innerHTML = "错误!"+xhr.readyState+xhr.status;
   }
- }
+ };
  xhr.open("post", "http://127.0.0.1/comment.php", true);
  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
  xhr.send(formSerialize(form));
@@ -109,7 +111,7 @@ function creatCommentForm(pid, aid, hascomment, a){
  var r = a.parentNode;
  var rb = r.parentNode;
  var w = rb.parentNode;
- var c = w.parentNode;i
+ var c = w.parentNode;
  if(prevCF === c){
   prevCF = null;
   return;

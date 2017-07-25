@@ -186,6 +186,7 @@ a, a:visited{
   margin: 5px;
   float: left;
   width: 365px;
+  /*border: 1px dashed Red;*/
 }
 
 .boxTitle{
@@ -233,6 +234,8 @@ a, a:visited{
 
 /*表单样式开始*/
 .formItemGroup{
+  width: 344px;
+  border: 1px dashed Red;
 }
 
 .formItemGroupTitle{
@@ -247,8 +250,8 @@ a, a:visited{
 }
 
 .formItemWrapper{
-  margin: 10px;
-  padding: 5px;
+  margin: 10px 0;
+  padding: 3px;
 }
 
 .fieldLabel{
@@ -286,7 +289,6 @@ a, a:visited{
 .fieldWrapper select{
   width: 212px;
   height: 26px;
-  padding: 2px;
   border: 1px solid #99C4EA;
   border-radius: 2px;
   outline: none;
@@ -306,7 +308,7 @@ a, a:visited{
   margin: 1px 3px;
 }
 
-.fieldWrapper input:focus, .fieldWrapper textarea:focus, .fieldWrapper select:focus, .fieldWrapper button:focus{
+.fieldWrapper input:focus, .fieldWrapper textarea:focus, .fieldWrapper select:focus, .fieldWrapper input:hover, .fieldWrapper textarea:hover, .fieldWrapper select:hover{
   border: 1px solid #03A9F4;
   box-shadow: 0 0 2px #03A9F4;
 }
@@ -317,7 +319,7 @@ input[type="radio"], input[type="checkbox"]{
   margin: 5px;
 }
 
-.fieldWrapper input[type="radio"]:focus, .fieldWrapper input[type="checkbox"]:focus, .fieldWrapper input[type="file"]:focus{
+.fieldWrapper input[type="radio"]:focus, .fieldWrapper input[type="checkbox"]:focus, .fieldWrapper input[type="file"]:focus, .fieldWrapper input[type="radio"]:hover, .fieldWrapper input[type="checkbox"]:hover, .fieldWrapper input[type="file"]:hover{
   box-shadow: none;
 }
 
@@ -328,10 +330,30 @@ input[type="radio"], input[type="checkbox"]{
   background-color: #108CEE;/*#0080C8;*/
   border: 1px solid #108CEE;/*#0080C8;*/
   color: #FFFFFF;
+  outline: none;
 }
 
-input[type="file"], input[type="file"]:focus{
+.fieldWrapper button:focus{
+  background-color: #108CEE;
+  border: 1px solid #108CEE;
+}
+
+.fieldWrapper button:hover{
+  background-color: #108CEE;
+  border: 1px solid #108CEE;
+}
+
+.fieldWrapper button:active{
+  background-color: #209BFD;
+  border: 1px solid #209BFD;
+}
+
+input[type="file"], input[type="file"]:focus, input[type="file"]:hover{
   border: 1px dashed Red;
+}
+
+input[type="file"]:active{
+  background-color: Red;
 }
 
 .formItemHelp{
