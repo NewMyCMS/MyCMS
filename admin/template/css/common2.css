@@ -1,13 +1,8 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* {box-sizing: border-box;}
 
 body{
   margin: 0;
   font-size: 14px;
-  font-family: iconfont, Hui-iconfont;
 }
 
 a, a:visited{
@@ -63,21 +58,11 @@ a, a:visited{
 }
 
 .currentMenu .foldIcon::before{
-  content: "\f0170";
-  font-size: 10px;
-  font-weight: lighter;
+  content: "-";
 }
 
 .asideMenuWrapper .foldIcon::before{
-  content: "\f016d";
-  font-size: 10px;
-  font-weight: lighter;
-}
-
-.mai-icon{
-  margin-right: 5px;
-  font-size: 16px;
-  color: #108CEE;
+  content: "+";
 }
 
 .asideMenuWrapper .asideMenuItems{
@@ -93,7 +78,7 @@ a, a:visited{
 }
 
 .asideMenuItems li{
-  padding: 10px 5px 10px 30px;
+  padding: 10px 5px 10px 20px;
 }
 
 .asideMenuItems li:hover{}
@@ -158,23 +143,19 @@ a, a:visited{
   width: 740px;
 }
 
+.box2col{
+  margin: 5px;
+  float: left;
+  width: 365px;
+  /*border: 1px dashed Red;*/
+}
+
 .boxTitle{
   padding: 10px 20px;
   border-bottom: 1px solid #D0D0D0;
   font-size: 16px;
   font-weight: bold;
   color: #108CEE;
-}
-
-.boxContainer{
-  padding: 5px;
-}
-
-.box2col{
-  margin: 5px;
-  float: left;
-  width: 365px;
-  /*border: 1px dashed Red;*/
 }
 
 .boxTab{
@@ -207,35 +188,15 @@ a, a:visited{
   color: #FFFFFF;
 }
 
-.box1{}
-
-.box1 .boxContainer{
-  padding: 0;
-}
-
-.box1 .boxTable tbody tr{
-  border-top: 0;
-  border-bottom: 1px dashed #D0D0D0;
-}
-
-.box1 .boxTable td{
-  padding: 25px 0 5px;
-}
-
-.box1 .boxTable td:first-child{
-  width: 20%;
-  text-align: right;
-}
-
-.box1 .boxTable td:last-child{
-  width: 80%;
-  text-align: left;
+.boxContainer{
+  padding: 10px;
 }
 /*盒子样式结束*/
 
 /*表单样式开始*/
+.boxContaier form{ position:: relative;}
 .formItemGroup{
-  background-color: #D0D0D0;
+  width: 344px;
   border: 1px dashed Red;
 }
 
@@ -251,31 +212,28 @@ a, a:visited{
 }
 
 .formItemWrapper{
-  margin: 0;
-  padding: 10px 3px;
-  background-color: #FFFFFF;
+  margin: 10px 0;
+  padding: 3px;
 }
 
 .fieldLabel{
   width: 100px;
-  padding: 8px 5px;
+  padding: 10px 5px;
   display: block;
   float: left;
 }
 
 .formItem{
+  padding: 5px;
   float: left;
 }
 
 .fieldWrapper{
-  width: 200px;
-  float: left;
-  margin: 0 5px;
 }
 
 .fieldWrapper input{
   width: 200px;
-  height: 26px;
+  height: 20px;
   padding: 2px 5px;
   border: 1px solid #99C4EA;
   border-radius: 2px;
@@ -291,7 +249,7 @@ a, a:visited{
 }
 
 .fieldWrapper select{
-  width: 200px;
+  width: 212px;
   height: 26px;
   border: 1px solid #99C4EA;
   border-radius: 2px;
@@ -299,7 +257,7 @@ a, a:visited{
 }
 
 .fieldWrapper select[multiple="multiple"]{
-  width: 200px;
+  width: 212px;
   height: 80px;
   border: 1px solid #99C4EA;
   border-radius: 2px;
@@ -307,7 +265,7 @@ a, a:visited{
 }
 
 .fieldWrapper option{
-  width: 192px;
+  width: 200px;
   padding: 1px;
   margin: 1px 3px;
 }
@@ -315,11 +273,6 @@ a, a:visited{
 .fieldWrapper input:focus, .fieldWrapper textarea:focus, .fieldWrapper select:focus, .fieldWrapper input:hover, .fieldWrapper textarea:hover, .fieldWrapper select:hover{
   border: 1px solid #03A9F4;
   box-shadow: 0 0 2px #03A9F4;
-}
-
-.fieldWrapper label{
-  display: inline-block;
-  margin: 5px;
 }
 
 input[type="radio"], input[type="checkbox"]{
@@ -366,20 +319,10 @@ input[type="file"]:active{
 }
 
 .formItemHelp{
+  width: 210px;
   font-size: 12px;
   color: #737574;
   padding: 2px 4px;
-  float: left;
-  margin: 0 5px;
-}
-
-/*垂直排列*/
-.box2 .formItemGroup{
-  width: 318px;/*注释掉此两项，表单项即和帮助文本呈水平排列*/
-}
-
-.box2 .formItem{
-  width: 210px;/*注释掉此项，表单项即和帮助文本呈水平排列*/
 }
 /*表单样式结束*/
 
@@ -401,20 +344,20 @@ input[type="file"]:active{
 }
 
 .boxTable tbody tr:focus, .boxTable tBody tr:hover{
-  border-top: 2px solid #F7AE6A;
-  border-bottom: 2px solid #F7AE6A;
+  border-top: 2px solid #DABB52;
+  border-bottom: 2px solid #DABB52;
 }
 
 .boxTable tbody tr:active{
-  border-top: 2px solid #F7AE6A;
-  border-bottom: 2px solid #F7AE6A;
-  background-color: #F2F2DF;
+  border-top: 2px solid #D0D0D0;
+  border-bottom: 2px solid #D0D0D0;
+  background-color: #EEFFE8;
 }
 
-/*.boxTable tfoot tr{
+.boxTable tfoot tr{
   border-top: 1px solid #D0D0D0;
   border-bottom: 2px solid #A1A1A1;
-}*/
+}
 
 .boxTable th{
   padding: 10px 5px;
@@ -430,13 +373,13 @@ input[type="file"]:active{
 
 .t_search_div{
   padding: 10px 0;
-  /*background: #A3D0C3;*/
-  float: right;
+  /*background: #A3D0C3;
+  float: right;*/
 }
 
 .t_search_div form{
   position: relative;
-  width: 240px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -462,14 +405,16 @@ input[type="file"]:active{
   cursor: pointer;
 }
 .t_search_div button:before {
-  content: "\e683";
-  font-family: Hui-iconfont;
+  content: "\f002";
+  font-family: FontAwesome;
   font-size: 16px;
   color: #FFFFFF;/*#F9F0DA;*/
 }
 
 /*分页*/
 .pagination{
+  padding: 10px;
+  border: 1px dashed red;
   text-align: center;
 }
 
@@ -484,33 +429,26 @@ input[type="file"]:active{
 
 .pagination li{
   display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 2px;
-  border: 1px solid #108CEE;
-}
-
-.current{
-  background-color: #108CEE;
 }
 
 .redirect_div{
-  padding: 5px 0;
-  float: right;
+  padding: 0;
   /*background: #A3D0C3;*/
+  float: right;
 }
 
 .redirect_div form{
   position: relative;
-  width: 80px;
+  width: 100px;
   margin: 0 auto;
 }
 
 .redirect_div input {
   width: 100%;
-  height: 26px;
+  height: 32px;
   padding-left: 10px;
-  border: 1px solid #7BA7AB;
-  border-radius: 2px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
   outline: none;
   /*background: #F9F0DA;*/
   color: #6E6E6E;/*#9E9C9C;*/
@@ -520,11 +458,11 @@ input[type="file"]:active{
   position: absolute; 
   top: 0;
   right: 0px;
-  width: 32px;
-  height: 26px;
+  width: 42px;
+  height: 32px;
   border: none;
   background: #7BA7AB;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 /*表格样式结束*/
@@ -586,3 +524,38 @@ input[type="file"]:active{
   height: 1px;
 }
 
+/*03a9f4*/
+div.search {padding: 30px 0}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.d1 {background: #A3D0C3;}
+.d1 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.d1 button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}

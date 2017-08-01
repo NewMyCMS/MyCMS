@@ -8,8 +8,7 @@
 	<meta name="keywords" content="MyCMS,PHP,CMS,麦草CMS,面向对象,内容管理">
 	<meta name="description" content="MyCMS（麦草CMS）是一个短小精悍的内容管理系统（CMS），用PHP语言编写，用了面向对象的语言结构。">
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
-	<link rel="stylesheet" type="text/css" href="css/fonts/Hui-iconfont/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts/iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/awesome.css">
 	<script type="text/javascript" src=""></script>
   </head>
   <body>
@@ -24,24 +23,24 @@
 		<div id="asideMenu">
 		  <!--菜单开始-->
 		  <nav class="asideMenuWrapper">
-			<div class="asideMenuTitle"><span class="mai-icon Hui-iconfont-shouye"></span><a href="index.html">概览</a></div>
+			<div class="asideMenuTitle"><a href="index.html">概览</a></div>
 			<!--<div class="asideMenuItems"></div>-->
 		  </nav>
 		  <!--菜单结束-->
 		  <!--菜单开始-->
 		  <nav class="asideMenuWrapper">
-			<div class="asideMenuTitle"><span class="mai-icon Hui-iconfont-bianji2"></span><a href="form.html">表单</a><span class="foldIcon"></span></div>
+			<div class="asideMenuTitle"><a href="form.html">表单</a><span class="foldIcon"></span></div>
 			<div class="asideMenuItems">
 			  <ul>
-				<li><span class="mai-icon Hui-iconfont-bianji2"></span><a href="form.html">表单</a></li>
-				<li><span class="mai-icon Hui-iconfont-bianji"></span><a href="editor.html">在线编辑器</a></li>
+				 <li><a href="form.html">表单</a></li>
+				 <li><a href="editor.html">在线编辑器</a></li>
 			  </ul>
 			</div>
 		  </nav>
 		  <!--菜单结束-->
 		  <!--菜单开始-->
 		  <nav class="asideMenuWrapper">
-			<div class="asideMenuTitle"><span class="mai-icon Hui-iconfont-muban"></span><a href="table.html">表格</a><span class="foldIcon"></span></div>
+			<div class="asideMenuTitle"><a href="table.html">表格</a><span class="foldIcon"></span></div>
 			<div class="asideMenuItems">
 			  <ul>
 				<li><a href="table.html">表格</a></li>
@@ -51,7 +50,7 @@
 		  <!--菜单结束-->
 		  <!--菜单开始-->
 		  <nav class="asideMenuWrapper">
-			<div class="asideMenuTitle"><span class="mai-icon Hui-iconfont-tishi"></span><a href="messageBox.html">信息框</a><span class="foldIcon"></span></div>
+			<div class="asideMenuTitle"><a href="messageBox.html">信息框</a><span class="foldIcon"></span></div>
 			<div class="asideMenuItems">
 			  <ul>
 				<li><a href="messageBox.html">信息框</a></li>
@@ -61,7 +60,7 @@
 		  <!--菜单结束-->
 		  <!--菜单开始-->
 		  <nav class="asideMenuWrapper">
-			<div class="asideMenuTitle"><span class="mai-icon Hui-iconfont-chajian"></span><a href="box.html">盒子</a><span class="foldIcon"></span></div>
+			<div class="asideMenuTitle"><a href="box.html">盒子</a><span class="foldIcon"></span></div>
 			<div class="asideMenuItems">
 			  <ul>
 				<li><a href="box.html">盒子</a></li>
@@ -83,49 +82,23 @@
 		<div id="pageBody">
 		  <!--容器开始-->
 		  <div class="boxWrapper">
-			<!--盒子开始-->
-			<div class="box1">
-			  <div class="boxTitle">站点信息</div>
-			  <div class="boxContainer">
-				<table class="boxTable">
-				  <tbody>
-					<tr>
-					  <td>展示项名称:</td>
-					  <td>展示项详情</td>
-					</tr>
-					<tr>
-					  <td>展示项名称:</td>
-					  <td>展示项详情</td>
-					</tr>
-					<tr>
-					  <td>展示项名称:</td>
-					  <td>展示项详情</td>
-					</tr>
-					<tr>
-					  <td>展示项名称:</td>
-					  <td>展示项详情</td>
-					</tr>
-				  </tbody>
-				</table>
-			  </div>
-			</div>
-			<!--盒子结束-->
-			<div class="hidden"></div>
-		  </div>
-		  <!--容器结束-->
-		  <!--容器开始-->
-		  <div class="boxWrapper">
-			<!--盒子开始-->
 			<div class="box">
-			  <div class="boxTitle">站点信息</div>
+			  <div class="boxTitle">标题</div>
 			  <div class="boxContainer">
-				空盒子
+				一个空盒子
+
+				<div class="search d1">
+				  <form>
+					<input type="text" placeholder="搜索从这里开始...">
+					<button type="submit"></button>
+				  </form>
+				</div>
 			  </div>
 			</div>
-			<!--盒子结束-->
 			<div class="hidden"></div>
 		  </div>
 		  <!--容器结束-->
+		  <div class="fixedBox">悬浮的盒子</div>
 		</div>
 		<!--主体结束-->
 		<!--页脚开始-->
@@ -144,5 +117,17 @@
 		<script type="text/javascript" src="../plugin/UEditor/ueditor.config.js"></script>
 		<!-- 编辑器源码文件 -->
 		<script type="text/javascript" src="../plugin/UEditor/ueditor.all.js"></script>
+		<!-- 实例化编辑器 -->
+		<!--<script type="text/javascript">
+        var ue = UE.getEditor('container');
+		</script>-->
+		<!--KindEditor-->
+		<script charset="utf-8" src="../plugin/kindeditor/kindeditor-all-min.js"></script>
+		<script charset="utf-8" src="../plugin/kindeditor/lang/zh-CN.js"></script>
+		<!--<script>
+        KindEditor.ready(function(K) {
+		window.editor = K.create('#editor_id');
+        });
+		</script>-->
   </body>
 </html>

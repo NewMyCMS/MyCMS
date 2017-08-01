@@ -4,21 +4,12 @@
 <title>示例</title>
 <link rel="stylesheet" type="text/css" href="css/example.css">
   <meta charset="utf8">
+  <script src="js/core.js"></script>
 <script src="js/example.js"></script>
-<style type="text/css">
-  .title ul{
-    list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  .title li{
-    display: inline;
-	margin: 0;
-	border: 1px solid red;
-  }
-</style>
+
 </head>
   <body>
+	<div style="margin: 0 auto;width:600px;">
 	<div>
 	  <div class="title">
 		<ul>
@@ -28,6 +19,38 @@
 		</ul>
 	  </div>
 	  <div class="content">test</div>
+	</div>
+	<div class="top">123</div>
+	<div class="box">
+	<form>
+	  <input class="left">
+	  <button class="inside">test</button>
+	</form>
+	</div>
+	
+
+	<div id="q" class="search d1">
+	  <form>
+		<table class="boxTable">
+		  <thead>
+			<tr>
+			  <th><input id="a" type="checkbox"></th>
+			  <th>标题</th>
+			  <th>作者</th>
+			  <th>摘要</th>
+			  <th>时间</th>
+			  <th>操作</th>
+			</tr>
+		  </thead></table>
+	  </form>
+	</div>
+
+	<div class="search d1">
+	  <form>
+		<input type="text" placeholder="搜索从这里开始...">
+		<button type="submit"></button>
+	  </form>
+	</div>
 	</div>
   </body>
 </html>
